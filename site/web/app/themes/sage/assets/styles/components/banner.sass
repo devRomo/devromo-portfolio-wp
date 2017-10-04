@@ -1,0 +1,82 @@
+//  $variable
+$primary-color: rgba(139, 65, 65, 1)
+$off-white: rgba(220, 220, 220, 1)
+$font-one: Kaiti TC
+$soft-color: rgba(223, 166, 166, 1)
+$darker-back: rgba(96, 41, 41, 1)
+
+#scroll-to-top
+    filter: invert(102%)
+    bottom: 0ox
+    top: 17px
+
+
+.banner
+    padding: 30px 10px 4px 10px
+    height: 505px
+    width: 100%
+    background-color: $primary-color
+    float: left
+
+    img + hr 
+        width: 21%
+        position: absolute 
+        margin: 160px 668.5px
+
+    h1 
+        color: black
+        font: 100% $font-one
+        font-size: 4em
+        position: absolute
+        display: inline
+        color: $off-white
+        margin: 72px 0 0 710px
+
+    img
+        display: block
+        position: absolute
+        margin: 40px 160px
+        width: 40%
+        height: 59%
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 4px 10px 25px 4px rgba(0, 0, 0, 0.19)
+
+    .navMenu
+        width: 100%
+        display: block
+        text-align: center
+
+        .navItems
+            a
+                display: inline-block
+                margin: 0 45px 0 45px
+                font: 100% $font-one
+                font-size: 1.3em
+                text-decoration: none                
+                color: $off-white
+                border: 
+                    bottom: 2px solid $off-white
+                &:hover
+                    color: $soft-color
+                    border: 
+                        bottom: 2px solid $darker-back
+    .resumeLink
+        a
+            text-decoration: none
+            color: $primary-color
+            border: 1px solid white
+            padding: 7px 35px 7px 35px
+            background-color: white 
+            box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2), 0px 8px 15px 0px rgba(0, 0, 0, 0.19)
+            position: absolute
+            margin: 301px 0 0 960px
+
+    hr + hr 
+        width: 20%
+        postion: absolute
+        margin: 265px 0 0 0
+
+    span + hr 
+        width: 0
+        height: 134px
+        position: absolute
+        margin: 313px 0 0 550px

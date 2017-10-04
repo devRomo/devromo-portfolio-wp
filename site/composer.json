@@ -39,7 +39,13 @@
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "roots/soil": "3.7.1",
-    "johnpbloch/wordpress": "4.7.3"
+    "johnpbloch/wordpress": "4.7.3",
+    "wpackagist-plugin/custom-post-type-ui": "1.5.5",
+    "wpackagist-plugin/jetpack": "5.3",
+    "wpackagist-plugin/popup-builder": "2.6.4.3",
+    "wpackagist-plugin/contact-form-7": "4.9",
+    "wpackagist-plugin/megamenu": "2.3.8",
+    "wpackagist-plugin/jquery-smooth-scroll": "1.4.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

@@ -1,0 +1,52 @@
+.nav-primary
+    width: 100%
+    display: block
+    text-align: center
+        
+    li 
+        list-style-type: none
+        display: inline-block
+        margin: 0 45px 0 45px
+        a
+            font: 100% $font-one
+            font-size: 1.3em
+            text-decoration: none                
+            color: $off-white
+            border: 
+                bottom: 2px solid $off-white
+            &:hover
+                color: $soft-color
+                border: 
+                    bottom: 2px solid $darker-back
+
+    ul  
+        ul 
+            display: none
+            position: absolute
+            top: 93px 
+
+            li  
+                float: none  
+                width: 150px
+                font-size: .8em
+                background-color: $off-white
+
+                a  
+                    color: $darker-back
+                    border: none
+                    &:hover
+                        color: $darker-back
+                
+    ul  
+        li 
+            &:hover > ul
+                display: block
+                z-index: 200
+                margin-left: -90px
+                
+                li  
+                    display: block
+                    text-align: left
+                    padding: 3px 5px
+                    
+                    
