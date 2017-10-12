@@ -3,6 +3,7 @@
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/sass-mq/_mq.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 @import "common/global";
@@ -20,3 +21,7 @@
 @import "components/about";
 @import "components/contact";
 @import "components/_header";
+@import "responsive/workResponse";
+@import "responsive/design";
+@import "responsive/aboutMe";
+@import "responsive/contactResponse";

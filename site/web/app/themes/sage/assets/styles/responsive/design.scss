@@ -1,0 +1,79 @@
+/*-----------------------------------
+  ## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width: 1100px) {
+    #myWork{
+        #design{
+            .outer{
+                .designFrame{
+                    border-radius: 0%;
+                    img{
+                        border-radius: 0%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+  /*-----------------------------------
+  ## Tablets, Small Devices
+  ------------------------------------*/
+@media only screen and (max-width: 880px) {
+    #myWork{
+        #design{
+            .outer{
+                width: 60%;
+                .designFrame{
+                    width: 100%;
+                    margin-left: 0;
+                    height: 270px;
+                    margin-bottom: 15px;
+                    img{
+                        height: 270px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+  /*-----------------------------------
+  ## Phones, 
+  ------------------------------------*/
+@media only screen and (max-width: 630px) {
+    #myWork{
+        #design{
+            .outer{
+                .designFrame{
+                    height: 220px;
+                    img{
+                        height: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------------------
+  ## Extra Small Device 
+  ------------------------------------*/
+  @media only screen and (max-width: 480px) {
+    #myWork{
+        #design{
+            .outer{
+                .designFrame{
+                    height: 150px;
+                    margin-bottom: 30px;
+                    img{
+                        height: 150px;
+                    }
+                    .content{
+                        margin-top: -80%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -13,5 +13,8 @@ $projects_query = new WP_Query($arguments);
         <h4><?php the_field('header'); ?></h4>
         <p><?php the_field('about_me'); ?></p>
         <img src="<?php the_field('me_pic'); ?>" />
+        <?php if( get_field('resume_pdf') ): ?>
+            <span class=resumeLink><a href="<?php the_field('resume_pdf'); ?>" target="popup" >View Resume</a></span>
+        <?php endif; ?>
     </div>
 </section>

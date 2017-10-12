@@ -11,9 +11,11 @@ Table of Contents
 ---------------------------------------------------------------*/
 header {
   nav#navigation-drawer {
+    font: 100% $font-one;
     float: left;
     position: fixed;
     z-index: 999;
+    margin-top: 10px;
     div.mobile-toggle {
       input {
         cursor: pointer;
@@ -70,7 +72,6 @@ header {
         box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
         -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
         -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-        height: 100vh;
         list-style-type: none;
         margin: -100px 0 0 -50px;
         padding-top: 125px;
@@ -79,8 +80,7 @@ header {
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-        width: 33vw;
-        min-width: 300px;
+        min-width: 260px;
         &::after {
           background: red;
           width: 100vw;
@@ -94,7 +94,7 @@ header {
             cursor: pointer;
           }
           a {
-            color: #232323;
+            color: $primary-color;
             display: block;
             font-size: 1.5em;
             line-height: 2.5em;
@@ -114,24 +114,92 @@ header {
 /*-----------------------------------
 ## Wide Screens, Large Devices
 ------------------------------------*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
+  div.mobile-toggle{
+    display: none;
+  }
 
 }
 /*-----------------------------------
 ## Desktops, Medium Devices
 ------------------------------------*/
 @media only screen and (max-width: 992px) {
+  div.mobile-toggle{
+    display: none;
+  }
 
 }
+
 /*-----------------------------------
 ## Tablets, Small Devices
 ------------------------------------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 790px) {
+  div.mobile-toggle {
+      display: block;
+  }
+
+  .nav-primary ul{
+    display: none;
+  }
+
+  #scroll-to-top{
+    top: 540px;
+  }
+
+  .banner{
+    img{
+      width: 80%;
+      margin-top: 70px;
+    }
+    span{
+      display: block;
+      margin-left: 0;
+      margin-top: 450px;
+      text-align: center;
+    }
+    h1{
+      margin-top: -25px;
+      margin-left: 36%;
+    }
+    .resumeLink{
+      a{
+        margin-top: 440px;
+        margin-left: 36%;
+      }
+    }
+  }
 
 }
 /*-----------------------------------
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
+  div.mobile-toggle{
+    display: block;
+  }
+
+  .nav-primary ul{
+    display: none;
+  }
+
+  #scroll-to-top{
+    bottom: 17px;
+    top: 0px;
+  }
+
+  .banner{
+    img{
+      height: 53%;
+      margin-top: 80px;
+    }
+    h1{
+      margin-left: 32%;
+    }
+    .resumeLink{
+      a{
+        margin-left: 32%;
+      }
+    }
+  }
 
 }

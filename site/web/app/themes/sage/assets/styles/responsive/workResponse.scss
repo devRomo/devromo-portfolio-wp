@@ -1,0 +1,38 @@
+  /*-----------------------------------
+  ## Tablets, Small Devices
+  ------------------------------------*/
+@media only screen and (max-width: 872px) {
+    #myWork{
+        .imageFrame{
+            width: 49%;
+        }
+    }
+}
+  /*-----------------------------------
+  ## Tablets, Small Devices
+  ------------------------------------*/
+@media only screen and (max-width: 650px) {
+    #myWork{
+        padding: 30px 100px 30px 100px;
+        .imageFrame{
+            width: 100%;
+        }
+    }
+  
+}
+
+ /*-----------------------------------
+  ## Small Devices
+  ------------------------------------*/
+  @media only screen and (max-width: 500px) {
+      #myWork{
+          .imageFrame{
+              height: 210px;
+              margin-bottom: 15px;
+              img{
+                  height: 210px;
+              }
+          }
+      }
+  }
+  

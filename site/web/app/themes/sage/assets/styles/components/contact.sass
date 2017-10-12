@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One")
+@import url("https://fonts.googleapis.com/css?family=Rozha+One")
 
 $fredoka-font: Fredoka One, cursive
+$rozha-font: Rozha One, serif
 
 .outside
     padding: 0 120px 0 120px
@@ -10,7 +12,6 @@ $fredoka-font: Fredoka One, cursive
         float: left
         width: 95%
         margin: 0 auto
-        padding: 20px 35px 20px 35px
 
         .contactFrame
             border: 1px solid $gray-back
@@ -18,60 +19,76 @@ $fredoka-font: Fredoka One, cursive
             box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 4px 10px 25px 4px rgba(0, 0, 0, 0.19)
             height: 450px
             width: 95%
-            margin: 0 auto
+            padding: 0 25px 0 25px
 
-            .left
-                width: 37%
-                height: 450px
-                padding:
-                    left: 90px
-                float: left
+            h4 
+                font: 100% $milonga-font
+                color: $primary-color
+                font-size: 2.7em
+                margin-top: 40px
+                text-align: left
+                margin-left: 55px
 
-                h4 
-                    font: 100% $milonga-font
+            .social
+                display: inline-block 
+                margin-top: -40px
+                a
+                    color: $darker-back
+                    display: block
+                    margin-top: 10px
+                    margin-left: 120px
+
+            a  
+                color: white
+                text-decoration: none
+                font: 100% $rozha-font
+                display: none
+                text-align: center
+                margin-top: 130px
+                font-size: 2em
+               
+
+                span  
+                    border: 1px solid black
+                    padding: 30px 55px 30px 55px
+                    background-color: $primary-color
+                    
+
+            div.wpcf7
+                width: 50%
+                float: right
+                margin-top: -130px
+
+                p
+                    height: 30px
+
+                    .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required
+                        width: 100%
+                        font-size: 1.1em
+
+                    .wpcf7-form-control.wpcf7-text
+                        width: 100%
+                        font-size: 1.1em
+
+                    .wpcf7-form-control.wpcf7-textarea
+                        width: 100%
+                        border: none
+                        font-size: 1em
+
+                    .wpcf7-form-control.wpcf7-submit
+                        margin: 185px auto
+                        display: block
+                        font-size: 1.1em
+
+                div.wpcf7-validation-errors
+                    border-color: red
+                    font: 90% $fredoka-font
+                    text-align: center
+                    margin-top: -20px
                     color: $primary-color
-                    font-size: 2.7em
-                    margin-top: 100px
 
-            .right 
-                width: 42%
-                height: 450px
-                float: left
-
-                div.wpcf7
-                    margin: 35px 0 0 65px
-
-                    p
-                        height: 30px
-
-                        .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required
-                            width: 80%
-                            font-size: 1.1em
-
-                        .wpcf7-form-control.wpcf7-text
-                            width: 80%
-                            font-size: 1.1em
-
-                        .wpcf7-form-control.wpcf7-textarea
-                            border: none
-                            font-size: 1em
-
-                        .wpcf7-form-control.wpcf7-submit
-                            margin: 185px auto
-                            display: block
-                            font-size: 1.1em
-
-                    div.wpcf7-validation-errors
-                        border-color: red
-                        font: 90% $fredoka-font
-                        text-align: center
-                        margin-top: -20px
-                        color: $primary-color
-
-                    .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok
-                        font: 90% $fredoka-font
-                        text-align: center
-                        margin-top: -20px
-                        color: $primary-color
-
-                            
+                .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok
+                    font: 90% $fredoka-font
+                    text-align: center
+                    margin-top: -20px
+                    color: $primary-color        
